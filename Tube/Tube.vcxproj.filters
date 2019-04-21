@@ -4,6 +4,9 @@
     <Filter Include="Tube">
       <UniqueIdentifier>{151E8D7C-0155-8E0D-AA41-741096570A0F}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Tube\Events">
+      <UniqueIdentifier>{5980BB1F-C535-3415-4E2A-2EECBADE2A19}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Tube.h" />
@@ -16,9 +19,22 @@
     <ClInclude Include="src\Tube\EntryPoint.h">
       <Filter>Tube</Filter>
     </ClInclude>
+    <ClInclude Include="src\Tube\Events\ApplicationEvent.h">
+      <Filter>Tube\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Tube\Events\Event.h">
+      <Filter>Tube\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Tube\Events\KeyEvent.h">
+      <Filter>Tube\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Tube\Events\MouseEvent.h">
+      <Filter>Tube\Events</Filter>
+    </ClInclude>
     <ClInclude Include="src\Tube\Log.h">
       <Filter>Tube</Filter>
     </ClInclude>
+    <ClInclude Include="src\tbpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Tube\Application.cpp">
@@ -27,5 +43,6 @@
     <ClCompile Include="src\Tube\Log.cpp">
       <Filter>Tube</Filter>
     </ClCompile>
+    <ClCompile Include="src\tbpch.cpp" />
   </ItemGroup>
 </Project>

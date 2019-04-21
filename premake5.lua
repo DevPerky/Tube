@@ -18,6 +18,9 @@ project "Tube"
     targetdir("bin/" .. outputdir .. "/%{prj.name}")
     objdir("bin-int/" .. outputdir .. "/%{prj.name}")
 
+    pchheader "tbpch.h"
+    pchsource "Tube/src/tbpch.cpp"
+
     files
     {
         "%{prj.name}/src/**.h",
@@ -26,7 +29,8 @@ project "Tube"
 
     includedirs
     {
-        "%{prj.name}/vendor/spdlog/include"
+        "%{prj.name}/vendor/spdlog/include",
+        "%{prj.name}/src"
     }
 
 

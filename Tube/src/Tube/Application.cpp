@@ -1,4 +1,7 @@
+#include "tbpch.h"
 #include "Application.h"
+#include "Core.h"
+#include "Log.h"
 
 namespace Tube {
 
@@ -11,7 +14,12 @@ namespace Tube {
 	}
 
 	void Application::Run() {
+
+		TB_CORE_TRACE("Welcome to Tube Engine!");
+
 		while (true);
+
+
 	}
 
 }
