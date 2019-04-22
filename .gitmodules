@@ -1,3 +1,6 @@
 [submodule "Tube/vendor/spdlog"]
 	path = Tube/vendor/spdlog
 	url = https://github.com/gabime/spdlog
+[submodule "Tube/vendor/GLFW"]
+	path = Tube/vendor/GLFW
+	url = https://github.com/TheCherno/glfw

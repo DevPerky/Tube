@@ -35,6 +35,8 @@
       <Filter>Tube</Filter>
     </ClInclude>
     <ClInclude Include="src\tbpch.h" />
+    <ClInclude Include="src\Tube\Window.h" />
+    <ClInclude Include="src\Tube\Platform\Windows\WindowsWindow.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Tube\Application.cpp">
@@ -44,5 +46,6 @@
       <Filter>Tube</Filter>
     </ClCompile>
     <ClCompile Include="src\tbpch.cpp" />
+    <ClCompile Include="src\Tube\Platform\Windows\WindowsWindow.cpp" />
   </ItemGroup>
 </Project>

@@ -13,6 +13,7 @@ int main(int argc, char** argv) {
 	app->Run();
 	delete(app);
 
+	return 1;
 }
 
 #endif // TB_PLATFORM_WINDOWS

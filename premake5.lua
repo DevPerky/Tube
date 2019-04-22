@@ -10,6 +10,11 @@ workspace "Tube"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+IncludeDir = {}
+IncludeDir["GLFW"] = "Tube/vendor/GLFW/include"
+
+include "Tube/vendor/GLFW"
+
 project "Tube"
     location "Tube"
     kind "SharedLib"
@@ -30,7 +35,13 @@ project "Tube"
     includedirs
     {
         "%{prj.name}/vendor/spdlog/include",
-        "%{prj.name}/src"
+        "%{prj.name}/src",
+        "%{IncludeDir.GLFW}"
+    }
+
+    links{
+        "GLFW",
+        "opengl32.lib"
     }
 
 
